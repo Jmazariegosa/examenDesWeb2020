@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verProductoActivity"
+    android:paddingBottom="16dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="16dp"
+    android:id="@+id/activity_alumnos">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar Producto"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginBottom="10dp"
+        >
+
+        <EditText
+            android:id="@+id/etxt_buscar_Producto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_below="@+id/textlayout1"
+        android:id="@+id/recyclerProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/textCantidad"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/recyclerProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cant. Producto Seleccionado:"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/cantidadProduct"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/recyclerProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:text="Cantidad"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cantidadProduct"
+        android:text="Carrito de compras"
+        android:textColor="?attr/colorPrimaryDark"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+
+</RelativeLayout>
